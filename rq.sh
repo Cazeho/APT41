@@ -14,6 +14,7 @@ sudo apt-get install -y \
 
 # Optional: Install g++ if not already installed
 sudo apt-get install -y g++
+apt install mingw-w64 g++ -y
 
 echo "All required packages have been installed."
 
