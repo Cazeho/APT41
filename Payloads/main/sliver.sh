@@ -7,3 +7,4 @@ apt install sliver
 
 sliver-server
 update
+armory
