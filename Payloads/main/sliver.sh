@@ -12,4 +12,4 @@ armory
 
 profiles new --http 192.168.10.50 -f exe apt41
 profiles generate apt41
-netstat -anto
+netstat -antb
