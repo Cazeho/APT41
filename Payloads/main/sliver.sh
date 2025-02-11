@@ -10,5 +10,5 @@ update
 armory
 
 
-profiles new --http 192.168.10.50:8888 -f exe apt41
+profiles new --http 192.168.10.50 -f exe apt41
 profiles generate apt41
