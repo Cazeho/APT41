@@ -94,7 +94,7 @@ class Program
     {
         using (HttpClient client = new HttpClient())
         {
-            string apiUrl = "https://happy.com/config";
+            string apiUrl = "http://192.168.10.50/config";
             string jsonData = JsonSerializer.Serialize(systemInfo);
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
@@ -206,7 +206,7 @@ class Program
     {
         using (HttpClient client = new HttpClient())
         {
-            string apiUrl = "https://cgolf.com/api";
+            string apiUrl = "http://192.168.10.50/api";
             var data = new
             {
                 Credentials = credentials,
