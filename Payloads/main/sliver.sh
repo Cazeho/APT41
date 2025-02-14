@@ -46,3 +46,4 @@ armory install sqlrecon
 armory install sharpmapexec
 armory install sharpdpapi
 armory install sharpchrome
+execute-assembly 
