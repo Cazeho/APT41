@@ -12,5 +12,9 @@ dotnet add package System.Security.Cryptography.ProtectedData
 dotnet publish -c Release -r win-x64 --self-contained true
 
 
+# you need to build in visual studio with .NET framework v4.7.2
+<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+
+## Anti VM
 
 wmic csproduct get uuid
