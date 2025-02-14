@@ -36,3 +36,13 @@ armory install sa-ldapsearch
 armory install sa-ipconfig
 armory install sa-enum-local-sessions
 armory install remote-schtasksrun
+armory install remote-adduser
+armory install remote-addusertogroup
+armory install kerbrute
+armory install hashdump
+armory install sharp-smbexec
+armory install sharprdp
+armory install sqlrecon
+armory install sharpmapexec
+armory install sharpdpapi
+armory install sharpchrome
