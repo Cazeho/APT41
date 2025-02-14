@@ -10,4 +10,4 @@ dotnet publish -c Release -r win-x64 --self-contained true
 
 
 
-wmic csproduct uuid
+wmic csproduct get uuid
