@@ -51,3 +51,5 @@ execute-assembly sharpkatz
 sa-ldapsearch (&(objectClass=user)(!(objectclass=computer)))
 ## list preauth users
 sa-ldapsearch (&(objectCategory=person)(objectClass=user)(userAccountControl:1.2.840.113556.1.4.803:=4194304))
+## list kerberoasting
+sa-ldapsearch (&(objectClass=user)(servicePrincipalName=*))
