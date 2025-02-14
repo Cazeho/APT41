@@ -46,4 +46,5 @@ armory install sqlrecon
 armory install sharpmapexec
 armory install sharpdpapi
 armory install sharpchrome
-execute-assembly 
+execute-assembly sharpkatz
+sa-ldapsearch (&(objectClass=user)(!(objectclass=computer)))
