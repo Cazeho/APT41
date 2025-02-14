@@ -1,3 +1,6 @@
+## dotnet version 8
+
+
 dotnet new console -n stealer
 cd stealer
 dotnet add package System.Data.SQLite
